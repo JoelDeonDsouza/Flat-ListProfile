@@ -31,7 +31,7 @@ const DATA = [...Array(30).keys()].map((_, i) => {
   };
 });
 
-const SPACING = 20;
+const SPACING = 12;
 const AVATAR_SIZE = 80;
 const ITEM_SIZE = AVATAR_SIZE + SPACING * 3;
 
@@ -91,14 +91,11 @@ export default function App() {
                 }}
               />
               <View>
-                <Text style={{ fontSize: 22, fontWeight: "700" }}>
+                <Text style={{ fontSize: 19, fontWeight: "700" }}>
                   {item.name}
                 </Text>
-                <Text style={{ fontSize: 18, opacity: 0.7 }}>
+                <Text style={{ fontSize: 15, opacity: 0.7 }}>
                   {item.jobTitle}
-                </Text>
-                <Text style={{ fontSize: 14, opacity: 0.8, color: "#0099cc" }}>
-                  {item.email}
                 </Text>
                 <View style={{ flexDirection: "row" }}>
                   <Pressable
@@ -118,7 +115,7 @@ export default function App() {
                     <Text
                       style={{
                         fontSize: 12,
-                        lineHeight: 10,
+                        lineHeight: 12,
                         fontWeight: "bold",
                         letterSpacing: 0.25,
                         color: "#121212"
@@ -144,7 +141,7 @@ export default function App() {
                     <Text
                       style={{
                         fontSize: 12,
-                        lineHeight: 10,
+                        lineHeight: 12,
                         fontWeight: "bold",
                         letterSpacing: 0.25,
                         color: "#121212"
