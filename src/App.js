@@ -7,12 +7,7 @@ import {
   Text,
   View,
   Dimensions,
-  Pressable,
-  StyleSheet,
-  TouchableOpacity,
-  Easing,
-  SafeAreaViewBase,
-  SafeAreaView
+  Pressable
 } from "react-native";
 const { width, height } = Dimensions.get("screen");
 import faker from "faker";
