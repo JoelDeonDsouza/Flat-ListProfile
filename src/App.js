@@ -7,6 +7,7 @@ import {
   Text,
   View,
   Dimensions,
+  Pressable,
   StyleSheet,
   TouchableOpacity,
   Easing,
@@ -31,7 +32,7 @@ const DATA = [...Array(30).keys()].map((_, i) => {
 });
 
 const SPACING = 20;
-const AVATAR_SIZE = 70;
+const AVATAR_SIZE = 80;
 const ITEM_SIZE = AVATAR_SIZE + SPACING * 3;
 
 export default function App() {
@@ -85,7 +86,8 @@ export default function App() {
                   width: AVATAR_SIZE,
                   height: AVATAR_SIZE,
                   borderRadius: AVATAR_SIZE,
-                  marginRight: SPACING / 2
+                  marginRight: SPACING / 2,
+                  marginTop: 8
                 }}
               />
               <View>
@@ -98,6 +100,60 @@ export default function App() {
                 <Text style={{ fontSize: 14, opacity: 0.8, color: "#0099cc" }}>
                   {item.email}
                 </Text>
+                <View style={{ flexDirection: "row" }}>
+                  <Pressable
+                    style={{
+                      width: 20,
+                      alignItems: "center",
+                      justifyContent: "center",
+                      paddingVertical: 12,
+                      paddingHorizontal: 32,
+                      borderRadius: 4,
+                      elevation: 3,
+                      backgroundColor: "#F47340",
+                      marginTop: 5,
+                      marginLeft: 30
+                    }}
+                  >
+                    <Text
+                      style={{
+                        fontSize: 12,
+                        lineHeight: 10,
+                        fontWeight: "bold",
+                        letterSpacing: 0.25,
+                        color: "#121212"
+                      }}
+                    >
+                      Hire!
+                    </Text>
+                  </Pressable>
+                  <Pressable
+                    style={{
+                      width: 20,
+                      alignItems: "center",
+                      justifyContent: "center",
+                      paddingVertical: 12,
+                      paddingHorizontal: 32,
+                      borderRadius: 4,
+                      elevation: 3,
+                      backgroundColor: "#F47340",
+                      marginTop: 5,
+                      marginLeft: 10
+                    }}
+                  >
+                    <Text
+                      style={{
+                        fontSize: 12,
+                        lineHeight: 10,
+                        fontWeight: "bold",
+                        letterSpacing: 0.25,
+                        color: "#121212"
+                      }}
+                    >
+                      View
+                    </Text>
+                  </Pressable>
+                </View>
               </View>
             </Animated.View>
           );
